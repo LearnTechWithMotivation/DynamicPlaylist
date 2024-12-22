@@ -39,7 +39,12 @@ input {
     border-radius: 0.5em;
     margin-top: 2%;
 }
-
+@media (max-width: 480px) {
+    /* Styles for devices with a screen width of 480px or less (e.g., small phones in portrait mode) */
+    .detailsForm .submitButton{
+        flex-direction: column;
+    }
+}
 .detailsForm .submitButton {
     width: 10%;
     border: none;
