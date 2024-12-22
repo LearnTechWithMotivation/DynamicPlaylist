@@ -41,7 +41,8 @@ input {
 }
 @media (max-width: 480px) {
     /* Styles for devices with a screen width of 480px or less (e.g., small phones in portrait mode) */
-    .detailsForm .submitButton{
+    .content {
+        display: flex;
         flex-direction: column;
     }
 }
