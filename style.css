@@ -3,13 +3,7 @@
     padding: 0;
     font-family: "Montserrat", serif;
 }
-@media (max-width: 480px) {
-    /* Styles for devices with a screen width of 480px or less (e.g., small phones in portrait mode) */
-    .content {
-        display: flex;
-        flex-direction: column;
-    }
-}
+
 .content {
     display: flex;
 }
@@ -154,4 +148,21 @@ body {
     align-items: center;
     gap: 5%;
     font-size: 0.7em;
+}
+
+@media (max-width: 480px) {
+
+    /* Styles for devices with a screen width of 480px or less (e.g., small phones in portrait mode) */
+    .content {
+        flex-direction: column;
+    }
+
+    .detailsForm {
+        width: 80vw;
+    }
+
+    .playlist {
+        flex: 1;
+        width: 80vw;
+    }
 }
