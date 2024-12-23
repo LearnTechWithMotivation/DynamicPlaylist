@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded",
         `<div class="video">
         <div class="thumbnail">
             
-            <img src="https://picsum.photos/200/300/?random=${Math.random()}" alt="missing">
+            <img src="https://picsum.photos/512/512/?random=${Math.random()}" alt="missing">
         </div>
         <div class="title">
           ${title}

@@ -113,7 +113,7 @@ body {
     margin: 1%;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: "1.5fr 1fr 1fr";
     grid-template-areas: "thumbnail title title"
         "thumbnail title title"
         "thumbnail details details";
@@ -162,7 +162,7 @@ body {
     }
 
     .playlist {
-        flex: 1;
+        /* flex: 1; */
         width: 80vw;
     }
 }
