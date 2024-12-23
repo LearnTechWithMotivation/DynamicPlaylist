@@ -1,15 +1,4 @@
-// function switchToDarkTheme() {
-//   console.log("switchClick");
-//   document.body.style.background = "radial-gradient(circle, rgba(220, 173, 30, 1) 10%, rgb(0, 0, 0) 85%)";
-// }
 
-// const doThing = ()=>{
-//     event.preventDefault();
-//     const formDoc = document.getElementsByClassName("detailsForm")[0];
-//     const title = document.getElementById('Title');
-//     console.log(formDoc,title);
-//     alert("submitted");
-// }
 document.addEventListener("DOMContentLoaded",
   () => {
     const doThing = (event) => {
@@ -44,18 +33,11 @@ document.addEventListener("DOMContentLoaded",
     document.getElementById('clearButtom').onclick = () => {
       location.reload();
     }
-    // document.getElementsByClassName("switchTheme")[0].addEventListener("click",
-    //   ()=>{
-    //     alert("Switch theme")
-    //     document.body.classList.toggle("darkTheme");
-    //   }
-    // );
-
-    document.querySelector(".switchTheme").addEventListener("click", () => {
-      alert("Switch theme clicked");
-      console.log("Switch theme clicked");
-      alert("Switch theme");
-      document.body.classList.toggle("darkTheme");
-  });
   }
-)
+);
+
+document.getElementsByClassName("switchTheme")[0].onclick = () => {
+    console.log("Switch theme clicked");
+    // alert("Switch theme");
+    document.body.classList.toggle("darkTheme");
+}
