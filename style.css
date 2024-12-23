@@ -165,4 +165,7 @@ body {
         /* flex: 1; */
         width: 80vw;
     }
+    .video{
+        height: 12vh;
+    }
 }
