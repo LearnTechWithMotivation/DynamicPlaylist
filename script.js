@@ -1,7 +1,7 @@
-function switchToDarkTheme() {
-  console.log("switchClick");
-  document.body.style.background = "radial-gradient(circle, rgba(220, 173, 30, 1) 10%, rgb(0, 0, 0) 85%)";
-}
+// function switchToDarkTheme() {
+//   console.log("switchClick");
+//   document.body.style.background = "radial-gradient(circle, rgba(220, 173, 30, 1) 10%, rgb(0, 0, 0) 85%)";
+// }
 
 // const doThing = ()=>{
 //     event.preventDefault();
@@ -41,9 +41,22 @@ document.addEventListener("DOMContentLoaded",
       )
     };
     document.getElementById('submitButton').onclick = doThing;
-    document.getElementById('clearButtom').onclick = ()=>{
+    document.getElementById('clearButtom').onclick = () => {
       location.reload();
     }
+    // document.getElementsByClassName("switchTheme")[0].addEventListener("click",
+    //   ()=>{
+    //     alert("Switch theme")
+    //     document.body.classList.toggle("darkTheme");
+    //   }
+    // );
+
+    document.querySelector(".switchTheme").addEventListener("click", () => {
+      alert("Switch theme clicked");
+      console.log("Switch theme clicked");
+      alert("Switch theme");
+      document.body.classList.toggle("darkTheme");
+  });
   }
 )
 

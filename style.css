@@ -16,17 +16,42 @@ label {
     color: var(--text-white);
 }
 
-input {
-    /* background-color: blueviolet;
-    border: none; */
+.head h1{
+    color: var(--text-white);
+    font-size: 3rem;
+    text-align: center;
+
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    position: relative;
+}
+.switchTheme{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    position: absolute;
+    right: 3%;
+}
+.head svg{
+    height: 70%;
+    /* background-color: rgb(0, 255, 255); */
+    /* position: absolute; */
+    right: 1%;
+    filter: invert(100%);
+    border: 0.1em solid rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 2%;
 }
 
-.placeStyle::placeholder {
-    /* font-family: "Montserrat", serif; */
-    /* font-size: 2em; */
-    /* color: rgb(0, 255, 170); */
+.head svg:hover{
+    cursor: pointer;
 }
-
 .detailsForm {
     display: flex;
     flex-direction: column;
@@ -34,7 +59,7 @@ input {
     /* justify-content: center; */
     width: 50vw;
     margin: auto;
-    border: 0.3em solid whitesmoke;
+    border: 0.3em solid rgb(255, 255, 255);
     padding: 1%;
     border-radius: 0.5em;
     margin-top: 2%;
@@ -50,9 +75,7 @@ input {
     justify-content: center;
 }
 
-.detailsForm .submitButton {
-    /* padding: 1% 10%; */
-}
+
 
 .buttons {
     display: flex;
@@ -73,9 +96,16 @@ input {
 }
 
 body {
-    /* background: rgb(172,167,175); */
     background: radial-gradient(circle, #121212, #333333);
+    /* background: rgb(162, 0, 255); */
     height: 100vh;
+}
+.head h3{
+    color: var(--text-white);
+    font-size: 0.5em;
+    /* position: absolute; */
+    /* right: 2%; */
+
 }
 
 .Top {
@@ -150,6 +180,9 @@ body {
     font-size: 0.7em;
 }
 
+.darkTheme{
+    background: radial-gradient(circle, #ffffff, #fdf0f0);
+}
 @media (max-width: 480px) {
 
     /* Styles for devices with a screen width of 480px or less (e.g., small phones in portrait mode) */
